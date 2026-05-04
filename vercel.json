@@ -1,6 +1,0 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
-  "buildCommand": "go install github.com/snowztech/inkssg@latest && inkssg build",
-  "outputDirectory": "public"
-}
