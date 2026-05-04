@@ -1,0 +1,16 @@
+name: snowztech
+default_theme: snowztech
+output_dir: public
+
+meta:
+  lang: en
+  title: snowztech
+  description: A small workshop building developer tooling, AI agents, and minimal interfaces.
+  author: Lucas Neves Pereira
+  site_url: https://snowztech.com
+
+links:
+  - name: github
+    url: https://github.com/snowztech
+  - name: lucas
+    url: https://github.com/lucasnevespereira
