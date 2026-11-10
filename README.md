@@ -24,7 +24,7 @@ Open http://127.0.0.1:4321. Ink watches the source and reloads the page when fil
 make build
 ```
 
-The generated website is in `public/`. It can be served by any static host. Build output is ignored by Git. No hosting account or deployment is configured.
+The generated website is in `public/`. It can be served by any static host. Build output is ignored by Git. GitHub Pages publishes this directory through the workflow below.
 
 ## Edit
 
@@ -51,3 +51,9 @@ See `assets/vendor/snowztech-ui/README.md` for the pinned source and update inst
 ## Repository assets
 
 Prepared logo files and brand notes are tracked. Original browser screenshots in `resources/brand/references/` stay local and are ignored by Git. They are also excluded from Ink’s build.
+
+## Deployment
+
+Pushes to `main` run `.github/workflows/pages.yml`: install Ink v0.3.1, build the site, upload only `public/`, and deploy to GitHub Pages. The workflow can also be run manually from GitHub Actions.
+
+The repository’s Pages source is GitHub Actions and its custom domain is `snowztech.com`. DNS and the Pages HTTPS certificate are configured separately from this build. `vercel.json` disables automatic Vercel Git deployments; it is not a Vercel build configuration. To remove the Vercel integration entirely, disconnect this repository in the existing Vercel project's Git settings.
