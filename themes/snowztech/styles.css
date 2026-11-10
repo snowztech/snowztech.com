@@ -62,3 +62,11 @@ h1 { margin: 0; font-size: clamp(48px, 5.4vw, 64px); line-height: 1.07; font-wei
   .site-footer > :last-child { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* A real product view belongs with its project, below the compact introduction. */
+.project-preview { grid-column: 2 / -1; margin: var(--sn-s-4) 0 0; min-width: 0; }
+.project-preview > a { display: block; border: 1px solid var(--sn-border-strong); border-radius: var(--sn-r-md); overflow: hidden; }
+.project-preview img { display: block; width: 100%; height: auto; background: var(--sn-bg-inset); }
+.project-preview figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--sn-s-2) var(--sn-s-4); padding-top: var(--sn-s-3); color: var(--sn-fg-muted); font-size: var(--sn-text-2xs); line-height: var(--sn-leading-relaxed); }
+.project-preview figcaption a { color: var(--sn-fg); }
+@media (max-width: 700px) { .project-preview { grid-column: 1 / -1; } }

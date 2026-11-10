@@ -9,11 +9,17 @@ The two screenshots under `references/` are local reference material, ignored by
 - `references/identity-mockup.png`: the supplied identity layout reference. Its geometric snowflake is an alternative reference, not the selected direction.
 - `refinement-brief.md`: the design direction used for the refinement.
 
-## Logo use
+## Production logo and sharing assets
 
-The refined PNG is the current concept. The website uses a copy at `assets/mark.png`. It has an opaque black background; it is not a transparent cutout or a vector master.
+- `logos/snowztech-mark.svg`: transparent light SVG master for dark backgrounds.
+- `logos/snowztech-mark-dark.svg`: transparent dark SVG master for light backgrounds.
+- `logos/snowztech-avatar.png`: 512 × 512 avatar on a dark background.
+- `social/social-card.svg`: editable 1200 × 630 sharing card; PNG output is at `assets/brand/social-card.png`.
+- `assets/brand/` in the site root contains the web SVG, SVG favicon, 16/32/48px PNG favicons, and 180px Apple touch icon.
 
-Keep the aspect ratio and clear space around the mark. Use it in monochrome. Avoid stretching, shadows, gradients, or adding detail. Check small applications at 24–32 pixels before publishing. A finished SVG and dedicated favicon exports remain future work.
+The vector mark is a geometric reconstruction of the selected snowflake and diagonal motif. Four-unit strokes, rounded endpoints, and a transparent separation around the diagonal make it scalable. It is a website brand asset; the separate UI library’s canonical mark has not been changed.
+
+Keep the aspect ratio and the clear space in the SVG viewBox. Use the light mark on dark backgrounds and the dark mark on light backgrounds. Do not stretch it or add shadows and gradients. The earlier generated PNG remains archived as a concept.
 
 ## Website visual direction
 

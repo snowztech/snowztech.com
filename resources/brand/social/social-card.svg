@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#0a0a0a"/>
+<g style="color:#e8e8e8" transform="translate(62 55)"><defs><mask id="slash-gap"><rect width="64" height="64" fill="white"/><path d="M14 20L50 44" stroke="black" stroke-width="9" stroke-linecap="round"/></mask></defs><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><g mask="url(#slash-gap)"><path d="M32 8V56M14 44L50 20M23 17L32 24L41 17M23 47L32 40L41 47"/></g><path d="M14 20L50 44"/></g></g>
+<g font-family="Menlo, monospace" fill="#e8e8e8">
+<text x="142" y="99" font-size="27" font-weight="700">snowztech</text>
+<text x="1128" y="94" font-size="14" fill="#888888" text-anchor="end">INDEPENDENT SOFTWARE LAB</text>
+<text x="72" y="278" font-size="76" letter-spacing="-4">Software, built</text>
+<text x="72" y="369" font-size="76" letter-spacing="-4">in the open.</text>
+<text x="76" y="432" font-size="21" fill="#aaaaaa">Open-source developer tools.</text>
+<path d="M72 514H1128" stroke="#2a2a2a"/>
+<text x="72" y="565" font-size="17" fill="#aaaaaa">Farol · OneCorp · Holt · Ink · UI</text>
+<text x="1128" y="565" font-size="17" text-anchor="end">snowztech.com</text>
+</g></svg>
