@@ -1,55 +1,40 @@
-<!DOCTYPE html>
-<html lang="{{if .Site.Meta.Lang}}{{.Site.Meta.Lang}}{{else}}en{{end}}">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{if .Site.Meta.Title}}{{.Site.Meta.Title}}{{else}}{{.Page.Title}}{{end}}</title>
-  <meta name="description" content="{{if .Site.Meta.Description}}{{.Site.Meta.Description}}{{else}}{{.Page.Description}}{{end}}" />
-
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@snowztech/ui-css@0.2/dist/snowztech-ui.min.css" />
-  <link rel="stylesheet" href="/themes/snowztech/styles.css" />
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@snowztech/ui-js@0.2/dist/snowztech-ui.esm.js"></script>
-
-  {{if .Site.Meta.Title}}
-  <meta property="og:title" content="{{.Site.Meta.Title}}" />
-  <meta property="og:site_name" content="{{.Site.Meta.Title}}" />
-  {{end}}
-  {{if .Site.Meta.Description}}
-  <meta property="og:description" content="{{.Site.Meta.Description}}" />
-  {{end}}
-</head>
-<body>
-  <main class="page">
-    <header class="page__header">
-      <a class="brand" href="/" aria-label="snowztech home">
-        <svg class="brand__mark" width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="miter" stroke-linecap="square" aria-hidden="true">
-          <polygon points="16,3 27,9.5 27,22.5 16,29 5,22.5 5,9.5"/>
-          <polygon points="16,9 22,16 16,23 10,16"/>
-          <line x1="16" y1="3" x2="16" y2="9"/>
-          <line x1="16" y1="23" x2="16" y2="29"/>
-        </svg>
-        <span class="brand__word">snowztech<span class="brand__dot">.</span></span>
-      </a>
-      <button class="sn-theme-toggle" data-sn-theme-toggle data-sn-storage-key="snowztech-theme" aria-label="Toggle theme">
-        <span class="sn-theme-toggle__indicator"></span>
-      </button>
-    </header>
-
-    <div class="content">{{.Content}}</div>
-
-    <footer class="page__footer">
-      <span class="sn-meta">© snowztech <span class="year"></span></span>
-      <div class="links">
-        {{if .Site.Links}}
-        {{range .Site.Links}}
-        <a href="{{.URL}}" target="_blank" rel="noopener noreferrer">{{.Name}}</a>
-        {{end}}
-        {{end}}
-      </div>
-    </footer>
-  </main>
-  <script src="/themes/snowztech/script.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>{{.Site.Meta.Title}}</title>
+    <meta name="description" content="{{.Site.Meta.Description}}">
+    <meta property="og:title" content="{{.Site.Meta.Title}}">
+    <meta property="og:description" content="{{.Site.Meta.Description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="snowztech">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/png" href="/assets/mark.png">
+    <link rel="stylesheet" href="/assets/vendor/snowztech-ui/snowztech-ui.min.css">
+    <link rel="stylesheet" href="/themes/snowztech/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="snowztech home">
+          <img src="/assets/mark.png" alt="" width="42" height="42">
+          <span class="sn-wordmark">snowztech</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="https://github.com/snowztech">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+      <main id="main">{{.Content}}</main>
+      <footer class="site-footer">
+        <span>© 2026 snowztech</span>
+        <span>Built with <a href="https://github.com/snowztech/inkssg">Ink</a>.</span>
+        <a href="https://github.com/snowztech">Find us on GitHub <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+  </body>
 </html>

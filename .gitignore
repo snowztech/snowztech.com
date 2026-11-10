@@ -1,4 +1,6 @@
 public/
 .DS_Store
 *.log
-.vercel
+.vercel/
+# Browser screenshots stay local; publish only the prepared brand assets.
+/resources/brand/references/
