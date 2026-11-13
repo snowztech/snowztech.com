@@ -3,5 +3,5 @@ default_theme: snowztech
 output_dir: public
 meta:
   lang: en
-  title: snowztech — An independent software lab
-  description: Open-source developer tools, native applications, and the software behind them. Explore Farol, OneCorp, Holt, Ink, and our shared UI library.
+  title: snowztech — Software, built in the open
+  description: A small software lab in Paris making open-source Mac apps and developer tools, including Farol, OneCorp, Holt, Ink, and UI.

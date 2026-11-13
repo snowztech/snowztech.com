@@ -35,6 +35,7 @@ h1 { margin: 0; font-size: clamp(48px, 5.4vw, 64px); line-height: 1.07; font-wei
 .about h2 { margin: 0; font-size: clamp(26px, 3vw, 34px); line-height: 1.25; letter-spacing: -1px; font-weight: 500; }
 .about-copy p { margin: 0 0 var(--sn-s-5); color: var(--sn-fg-muted); font-size: var(--sn-text-base); line-height: 1.8; }
 .about-copy .text-link { margin-top: 7px; }
+.about-copy .inline-link { color: var(--sn-fg); }
 .site-footer { display: flex; justify-content: space-between; gap: var(--sn-s-6); padding: 25px 0 38px; border-top: 1px solid var(--sn-border-strong); color: var(--sn-fg-muted); font-size: var(--sn-text-2xs); line-height: var(--sn-leading-relaxed); }
 .site-footer a { color: var(--sn-fg-muted); }
 .skip-link { position: fixed; top: -100px; left: 16px; padding: var(--sn-s-3) 18px; z-index: 10; background: var(--sn-fg); color: var(--sn-bg); }

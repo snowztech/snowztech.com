@@ -15,12 +15,12 @@
     <meta property="og:image" content="https://snowztech.com/assets/brand/social-card.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Snowztech — Software, built in the open. Open-source developer tools.">
+    <meta property="og:image:alt" content="snowztech — Software, built in the open.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{.Site.Meta.Title}}">
     <meta name="twitter:description" content="{{.Site.Meta.Description}}">
     <meta name="twitter:image" content="https://snowztech.com/assets/brand/social-card.png">
-    <meta name="twitter:image:alt" content="Snowztech — Software, built in the open. Open-source developer tools.">
+    <meta name="twitter:image:alt" content="snowztech — Software, built in the open.">
     <meta name="theme-color" content="#0a0a0a">
     <link rel="icon" type="image/svg+xml" href="/assets/brand/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32.png">
@@ -28,6 +28,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/apple-touch-icon.png">
     <link rel="stylesheet" href="/assets/vendor/snowztech-ui/snowztech-ui.min.css">
     <link rel="stylesheet" href="/themes/snowztech/styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "snowztech",
+      "url": "https://snowztech.com/",
+      "logo": "https://snowztech.com/assets/brand/apple-touch-icon.png",
+      "description": "An independent software lab building open-source developer tools and native applications.",
+      "founder": { "@type": "Person", "name": "Lucas Neves Pereira", "url": "https://lucasnp.dev/" },
+      "sameAs": ["https://github.com/snowztech"]
+    }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -45,9 +57,8 @@
       </header>
       <main id="main">{{.Content}}</main>
       <footer class="site-footer">
-        <span>© 2026 snowztech</span>
-        <span>Built with <a href="https://github.com/snowztech/inkssg">Ink</a>.</span>
-        <a href="https://github.com/snowztech">Find us on GitHub <span aria-hidden="true">↗</span></a>
+        <span>© 2026 snowztech · Built with <a href="https://github.com/snowztech/inkssg">Ink</a></span>
+        <a href="https://lucasnp.dev">Made by Lucas Neves Pereira <span aria-hidden="true">↗</span></a>
       </footer>
     </div>
   </body>
